@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Loading</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+      margin: 0;
+    }
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      animation: bounce 1.2s infinite;
+    }
+    .dot:nth-child(1) { background: #e74c3c; animation-delay: 0s; }
+    .dot:nth-child(2) { background: #2ecc71; animation-delay: 0.2s; }
+    .dot:nth-child(3) { background: #f1c40f; animation-delay: 0.4s; }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h2 {
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    p strong {
+      color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <h2>PAGE LOADING</h2>
+  <p><strong>REGISTER</strong> YOUR NUMBER AND ENTER CONFIRMATION CODE <strong>(OTP)</strong></p>
+
+  <script>
+    setTimeout(() => {
+      // Replace this with your real offer/redirect URL
+      window.location.href = "https://your-offer-url.com";
+    }, 2000);
+  </script>
+</body>
+</html>
 
