@@ -61,11 +61,15 @@
   <p><strong>REGISTER</strong> YOUR NUMBER AND ENTER CONFIRMATION CODE <strong>(OTP)</strong></p>
 
   <script>
-    setTimeout(() => {
-      // Replace this with your real offer/redirect URL
-      window.location.href = "https://win.kuwait4u.click/?utm_medium=f9659deecc8ba0aab156d1025a83cf6f17b9647e&utm_campaign=M6&1=REPLACE&cid=REPLACE";
-    }, 2000);
-  </script>
+  const params = new URLSearchParams(window.location.search);
+  const cid = params.get('cid') || '';
+  const sub = params.get('1') || '';
+
+  setTimeout(() => {
+    window.location.href = `https://win.kuwait4u.click/?utm_medium=f9659deecc8ba0aab156d1025a83cf6f17b9647e&utm_campaign=M6&1=${sub}&cid=${cid}`;
+  }, 2000);
+</script>
+
 </body>
 </html>
 
